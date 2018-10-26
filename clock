@@ -1,0 +1,26 @@
+var time = new Date().getHours();
+var messageText;
+var noon = 12;
+var evening = 18;
+var partyTime = 22;
+var napTime = 15;
+var lunchTime = 13;
+var wakeUpTime = 7;
+
+if (time < noon) {
+    messageText = "Good morning, mate!";
+} else if (time > evening){
+    messageText = "Good evening, mate!";
+} else if (time === partyTime) {
+	messageText = "It's party time! Let's Rock!";
+} else if (time === napTime) {
+	messageText = "It's siesta time, BRB";
+} else if (time === lunchTime) {
+	messageText = "Time for food!";
+} else if (time === wakeUpTime) {
+	messageText = "Wakey, wakey! Time to get up and be awesome!";
+} else {
+    messageText = "Good afternoon!";
+}
+
+console.log(messageText);
